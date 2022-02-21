@@ -238,7 +238,7 @@ There are 8 variables for this evaluation.
 
 3.  How many of the evaluations are for female professors? To do this you will need to count the frequencies of female indicator variable and display the results. The following code does exactly that.
 
-195 evaluations are for female professors.
+
 
 ```{marginfigure}
 The two lines of code can be read as "Start with the beauty data frame, and then count the sum up the binary variable female, and display the results. The 'and then' in the previous sentence maps to %>%, the pipe operator, which takes what comes before it and plugs it in as the first argument of the function that comes after it."
@@ -248,6 +248,8 @@ The two lines of code can be read as "Start with the beauty data frame, and then
 beauty %>%
   summarise(no_of_female_professors=sum(female))
 ```
+
+195 evaluations are for female professors.
 
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 3. In this exercise you will not only provide a written answer but also include some code and output. You should insert the code in the code chunk provided for you, knit the document to see the output, and then write your narrative for the answer based on the output of this function, and knit again to see your narrative, code, and output in the resulting document. Then, commit your changes with a commit message that says "Completed Exercise 3", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
