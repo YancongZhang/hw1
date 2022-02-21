@@ -238,6 +238,8 @@ There are 8 variables for this evaluation.
 
 3.  How many of the evaluations are for female professors? To do this you will need to count the frequencies of female indicator variable and display the results. The following code does exactly that.
 
+195 evaluations are for female professors.
+
 ```{marginfigure}
 The two lines of code can be read as "Start with the beauty data frame, and then count the sum up the binary variable female, and display the results. The 'and then' in the previous sentence maps to %>%, the pipe operator, which takes what comes before it and plugs it in as the first argument of the function that comes after it."
 ```
