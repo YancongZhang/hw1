@@ -291,6 +291,11 @@ beauty %>%
 
 1.  Based on the previous output we can easily identify the most common sex at each professor age, but the output is sorted by `n` (the frequencies) as opposed to being organized by the `female`. Build on the pipeline to arrange the results so that they're arranged by `female` first, and then `n`. This means you will need to add one more step to the pipeline, and you have two options: `arrange(age, n)` or `arrange(n, age)`. You should try both and decide which one organizes the output by species and then ranks the names in order of frequency for each species.
 
+beauty %>%  
+ group_by(female,age) %>% 
+ tally(sort = TRUE) %>% 
+ arrange(age) 
+
 🧶 ✅ ⬆️ *Write your answer in your R Markdown document under Exercise 4. In this exercise you're asked to complete the code provided for you. You should insert the code in the code chunk provided for you, knit the document to see the output, and then write your narrative for the answer based on the output of this function, and knit again to see your narrative, code, and output in the resulting document. Then, commit your changes with a commit message that says "Completed Exercise 4", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 The following visualization plots the student evaluation of the professor against their assessed beauty.
